@@ -49,6 +49,7 @@
 		FA995C0024D2BA9900445381 /* CounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA995C0424D2BA9900445381 /* CounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterUITests.swift; sourceTree = "<group>"; };
 		FA995C0624D2BA9900445381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA995C1224D2BE0000445381 /* Counter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Counter.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 		FA995BE124D2BA9600445381 /* Counter */ = {
 			isa = PBXGroup;
 			children = (
+				FA995C1224D2BE0000445381 /* Counter.entitlements */,
 				FA995BE224D2BA9600445381 /* AppDelegate.swift */,
 				FA995BE424D2BA9600445381 /* SceneDelegate.swift */,
 				FA995BE624D2BA9600445381 /* ContentView.swift */,
@@ -434,8 +436,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Counter/Counter.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Counter/Preview Content\"";
+				DEVELOPMENT_TEAM = 335R2N6ZAC;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Counter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -444,6 +449,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Hentamine.Counter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -453,8 +459,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Counter/Counter.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Counter/Preview Content\"";
+				DEVELOPMENT_TEAM = 335R2N6ZAC;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Counter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -463,6 +472,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Hentamine.Counter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
